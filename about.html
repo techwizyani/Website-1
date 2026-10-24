@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
+        }
+
+
+        div.box {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 10px;
+        }
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .header a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .header-right {
+            float: right;
+        }
+
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                float: right;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="w3-black">
+
+    <div class="header"> <!-- New class for responsive nav menu -->
+        <a href="#default" class="logo">WWMP</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="team.html">Meet the Team</a>
+        <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="images/blog-photo.jpg" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-white">
+                            <h2>Mianna Parris</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple"></i>Software
+                            Developer</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple"></i>Fort Worth, TX</p>
+                        <p><i
+                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-purple"></i>miannaparris@gmail.com
+                        </p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple"></i>1(682) 555-5534</p>
+                        <hr>
+
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i>Skills</b></p>
+                        <p>Software Development</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:90%">90%</div>
+                        </div>
+                        <p>Web Design</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:88%">
+                                <div class="w3-center w3-text-white">88%</div>
+                            </div>
+                        </div>
+                        <p>Information Technology</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:95%">95%</div>
+                        </div>
+
+                        <p class="w3-large w3-text-theme"><b><i
+                                    class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b></p>
+                        <p>English</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-purple" style="height:24px;width:100%"></div>
+                        </div>
+                        <p>Spanish</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-purple" style="height:24px;width:35%"></div>
+                        </div>
+
+                        <br>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work Experience
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Software Development / dallascollege.edu</b></h5>
+                        <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2022 - <span
+                                class="w3-tag w3-purple w3-round">Current</span></h6>
+                        <p>Throughout my journey in the ITSE 1301 web design class, I have gained a solid foundation in web development by exploring various technologies, techniques, and methods. One of the key areas I delved into was understanding the importance of using the right tools for web development.By reading Visual Studio Code: End-to-End Editing and utilizing the additional resources provided in class as well as online, I learned how to effectively utilize Visual Studio Code (VS Code) and GitHub as an essential tool for web design. During my studies, I experimented with VS Code's capabilities, which greatly increased my productivity and coding efficiency. Some of these features included syntax highlighting, debugging, and version control integration.</p>
+
+                        <p>In addition to learning the ins and outs of VS Code, I was also introduced to the fundamentals of HTML and CSS. I developed a strong understanding of HTML, the backbone of any website, by practicing the creation of semantic structures using tags, elements, and attributes. The CSS lessons were particularly enlightening, as I learned how to style web pages to make them visually appealing. I experimented with different layout techniques, such as Flexbox and Grid, which allowed me to create responsive designs that adapt seamlessly to different screen sizes and devices which helped me further understand how to build and structure the basic foundations of a website that is still user friendly and asthetically pleasing.</p>
+
+                        <p>Looking ahead, I see how the skills and knowledge I've gained in this class will contribute to my long-term professional goals. As I work towards my degree in CIT with a focus on Software Development, the web design skills I've acquired will serve as a strong foundation for future coursework and professional opportunities. My current role as a Global Tech Analyst in the FinTech industry will benefit from my ability to create and maintain websites, and I am confident that these skills will open doors to software engineering positions or internships at an enterprise level. The hands-on experience I've gained in this class has given me the confidence to pursue my passion for web development and continue refining my skills as I work towards achieving my professional aspirations.</p>
+                        <hr>
+                    </div>
+                   
+                <div class="w3-container w3-card w3-white">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Education</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+                        <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+                        <p>Web Development! All I need to know in one place</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Dallas College</b></h5>
+                        <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - 2025</h6>
+                        <p>CIT.Associates of Applied Science</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Tarrant County College</b></h5>
+                        <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2018</h6>
+                        <p>Associates of Arts</p><br>
+                    </div>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+
+    <footer class="w3-container w3-purple w3-center w3-margin-top">
+        <p>Find me on social media.</p>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+        <footer class="footer-container">
+            <div class="footer-column">
+                <a href="https://www.dallascollege.edu">Dallas College</a><br>
+                <a href="https://www.microsoft.com/ai">Microsoft AI</a><br>
+            </div>
+    
+            <div class="footer-column">
+                <p>&copy; 2024 Mianna Parris. All rights reserved.</p>
+                <p><a href="mailto:webmaster@wwmp.com">Email the Webmaster</a></p>
+            </div>
+    </footer>
+
+</body>
+
+</html>

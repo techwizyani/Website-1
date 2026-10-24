@@ -1,0 +1,363 @@
+<!-- MAIN/HOME HTML FORM -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="layout.css"> <!-- Link to layout.css -->
+
+    <!-- Apple Touch Icons and Favicon links here -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+
+        div.box {
+            box-sizing: inherit;
+        }
+        
+        body { 
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header {
+          overflow: hidden;
+          background-color: #f1f1f1;
+          padding: 20px 10px;
+        }
+        
+        .header a {
+          float: center;
+          color: black;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px; 
+          line-height: 25px;
+          border-radius: 4px;
+        }
+        
+        .header a.logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+        
+        .header a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .header a.active {
+          background-color: dodgerblue;
+          color: white;
+        }
+        
+        .header-right {
+          float: right;
+        }
+        
+        @media screen and (max-width: 500px) {
+          .header a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .header-right {
+            float: none;
+          }
+        }
+ 
+        </style>
+</head>
+
+<body class="w3-black">
+
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.jpg" alt="Logo" class="logo"> <!-- Logo Image -->
+    </header>
+
+    <!-- New class for responsive nav menu -->
+    <div class="header"> 
+         <!-- <a href="#default" class="logo">WWMP</a> -->
+            <a href="index.html">Home</a>
+            <a href="about.html">Blog</a>
+            <a href="team.html">Meet the team</a>
+            <a href="contact-us.html">Contact Us</a>
+    </div>
+    
+    <main>
+        <aside class="content-list">
+            <h3>Contents</h3> <!-- contents header added-->
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#my-avatar">My Avatar</a></li>
+                <li><a href="#web-development">Web Development Journey</a></li>
+            </ul>
+        </aside>
+
+<header>  
+        <h1 style="background-color:#ddd;">Home Page</h1>
+    </header>
+
+        <section id="about-me">
+            <h2>About Me</h2>
+
+            <p>
+                <figure>
+                <a href="images/about-me-lg.jpg" target="_blank">
+                    <img src="images/about-me-thumb.jpg" alt="About Me Image" width="250" height="350">
+                </a>
+                <figcaption><b>About Me</b></figcaption>
+            </figure>
+
+            <strong>Hello there!</strong> My name is Mianna Parris, and I am 32 years old. I am currently enrolled
+                in this web design class as part of the coursework required for the degree I'm pursuing in Computer
+                Information Technology (CIT) with a focus on Software Development. I'm working towards earning an
+                Associate of Applied Science (A.A.S.) in Software Development, which I see as a significant step towards
+                my ultimate goal of transferring to a university to obtain a Bachelor of Science (B.S.) degree in
+                Computer Science. This path aligns with my aspirations to deepen my knowledge in the field of technology
+                and software development, and to build a strong foundation for a successful career in the tech industry.
+            </p>
+
+            <p> At this present time, I am employed as a Global Tech Analyst within the Financial Technology (FinTech)
+                sector. This role has provided me with invaluable experience in understanding the technical needs and
+                challenges of the financial industry, and it has solidified my interest in pursuing a career in software
+                engineering. I am particularly passionate about the ways in which technology can drive innovation and
+                efficiency in financial services, and I am eager to contribute to this dynamic field by developing
+                software solutions that can have a meaningful impact.
+
+            <p> As I continue my studies, my immediate goal is to position myself for a role in our software engineering
+                department, where I can apply the skills I am acquiring in this class and through my degree program. I
+                am also exploring opportunities to extend my horizons through internships that will allow me to gain
+                hands-on experience at an enterprise level. These internships will provide me with practical exposure to
+                real-world software development projects, enabling me to apply my theoretical knowledge in a
+                professional setting. I believe that gaining this experience is crucial for my growth as a software
+                developer and will better prepare me for the challenges of a full-time role in the industry.</p>
+
+            <p> In addition to my professional and educational pursuits, I lead a fulfilling life as a mother to my
+                11-year-old daughter. Being a mom is one of the most rewarding aspects of my life, and it has taught me
+                invaluable lessons in patience, time management, and resilience. Balancing my responsibilities as a
+                mother with my academic and professional goals can be challenging at times, but it has also strengthened
+                my determination to succeed. My daughter is a constant source of inspiration for me, and I am committed
+                to being a positive role model for her by showing her the importance of hard work, education, and
+                following one's passions. </p>
+
+            <p> One of the ways I express my creativity and find balance in my life is through my love of design. I have
+                always enjoyed designing in various capacities, whether it's creating digital art, designing websites,
+                or even decorating my home. I consider design to be a form of art, and it serves as my creative outlet—a
+                way to release and channel my artistic energy. In many ways, design is a perfect complement to my
+                interest in software development, as both fields require a combination of technical skills and
+                creativity. I find great satisfaction in taking abstract ideas and turning them into tangible,
+                functional designs that others can appreciate and interact with. </p>
+
+            <p> Design, for me, is more than just a hobby; it's a passion that I intend to integrate into my career as a
+                software developer. I believe that good design is at the heart of great software, and I am excited about
+                the prospect of merging my technical skills with my creative instincts to develop software that is not
+                only functional but also aesthetically pleasing and user-friendly. As I continue my journey in software
+                development, I look forward to the opportunities that lie ahead and am excited to see how my love for
+                design will shape my career and contributions to the tech industry. </p>
+
+            <p> In summary, my journey in education and career development is driven by a desire to combine my technical
+                skills in software development with my passion for design. Whether it's through my current role as a
+                Global Tech Analyst or my aspirations to become a software engineer, I am committed to pursuing my goals
+                with determination and creativity. I am excited about the future and the possibilities that lie ahead,
+                and I am eager to continue learning, growing, and making a positive impact in the world of technology.
+            </p>
+
+        </section>
+
+        <!-- My Avatar Section -->
+        <section id="my-avatar">
+            <h2>My Avatar</h2>
+
+            <figure>
+                <a href="images/my-avatar-lg.jpg" target="_blank">
+                    <img src="images/my-avatar-thumb.jpg" alt="My Avatar Image" width="250" height="375">
+                </a>
+                <figcaption><b>My Avatar</b></figcaption>
+            </figure>
+
+            <p> My avatar is Wonder Woman, a powerful superhero known for her strength, wisdom, and compassion. Wonder
+                Woman's real name is Diana, and she hails from the island of Themyscira. She is an Amazonian princess
+                who uses her abilities to fight for justice, love, and peace in the world of man. I chose Wonder Woman
+                as my avatar because she embodies the qualities I aspire to have: courage, resilience, and a strong
+                sense of justice.</p>
+
+            <p> Wonder Woman was created by William Moulton Marston and first appeared in All Star Comics #8 in 1941.
+                She
+                has since become one of the most iconic superheroes in popular culture, representing female empowerment
+                and the fight against oppression. Her creation was groundbreaking at a time when female superheroes were
+                rare, and she quickly became a symbol of hope and strength for many women.</p>
+
+            <p> As an Amazonian princess, Diana was raised in a society of warrior women, trained from a young age in
+                combat and diplomacy. Her abilities are extraordinary, including superhuman strength, agility, and
+                speed, as well as the power of flight. She also wields the Lasso of Truth, which forces anyone bound by
+                it to tell the truth, and her indestructible bracelets can deflect bullets. These tools, combined with
+                her fierce fighting skills, make her a formidable opponent in any battle. </p>
+
+            <p> But beyond her physical prowess, Wonder Woman is also known for her deep compassion and unwavering
+                commitment to justice. She doesn't fight merely for the sake of battle; she fights to protect the
+                innocent and to bring peace to the world. Her mission is not only to defeat her enemies but also to
+                change their hearts and minds, striving for a world where love and understanding prevail over hatred and
+                violence. </p>
+
+            <p> In many ways, Wonder Woman represents the ideal blend of strength and compassion. She is not only a
+                warrior but also a diplomat, always seeking to resolve conflicts peacefully when possible. This duality
+                is what makes her such a powerful and inspiring figure. She teaches us that true strength is not just
+                about physical power but also about the ability to show kindness, empathy, and understanding even in the
+                face of adversity. </p>
+
+            <p> Wonder Woman's origin story is deeply rooted in mythology, drawing on the rich traditions of Greek
+                mythology. Her mother, Queen Hippolyta, crafted her from clay, and she was given life by the gods of
+                Olympus. These mythological roots add depth to her character, connecting her to the ancient stories of
+                heroism and adventure that have inspired countless generations. </p>
+
+            <p> Over the years, Wonder Woman's character has evolved, reflecting the changing attitudes and values of
+                society. In the 1970s, for example, she became a feminist icon, symbolizing the fight for women's rights
+                and equality. Her stories often tackled social issues such as sexism, racism, and war, making her a
+                powerful voice for justice in a world that was, and still is, in need of change. </p>
+
+            <p> In recent years, Wonder Woman has continued to be a symbol of female empowerment, particularly with the
+                release of the 2017 film Wonder Woman, directed by Patty Jenkins. The film was a critical and commercial
+                success, further cementing Wonder Woman's status as a cultural icon. Gal Gadot's portrayal of the
+                character brought a new level of depth and nuance, showing her not just as a warrior but as a
+                compassionate and empathetic leader. </p>
+
+            <p> In choosing Wonder Woman as my avatar, I am inspired by her ability to remain true to her values no
+                matter the challenges she faces. She is a beacon of hope in a world that often seems dark and unjust.
+                Her courage, resilience, and unwavering sense of justice are qualities that I strive to emulate in my
+                own life. Just as Wonder Woman fights for a better world, I too hope to make a positive impact, standing
+                up for what is right and helping those in need. </p>
+
+            <p> Ultimately, Wonder Woman reminds us all that we have the power within ourselves to make a difference.
+                Whether through acts of kindness, standing up for others, or simply being true to our principles, we can
+                all be heroes in our own way. Wonder Woman's legacy is a testament to the power of belief in oneself and
+                the importance of fighting for a world where justice and love prevail. </p>
+
+
+        </section>
+
+        <!-- Web Development Journey Section -->
+        <section id="web-development">
+            <h2> Web Development Journey </h2>
+
+            <figure>
+                <a href="images/web-development-lg.jpg" target="_blank">
+                    <img src="images/web-development-thumb.jpg" alt="Web Development Journey Image" width="375"
+                        height="250">
+                </a>
+                <figcaption><b>Web Development Journey</b></figcaption>
+            </figure>
+
+            <p> As part of my journey in this web development class, I have been learning several essential skills and
+                techniques that are crucial for building modern websites. These skills form the backbone of web
+                development and are vital for creating websites that are not only functional but also visually appealing
+                and accessible to a wide audience. Here's a brief overview of what I've learned so far:</p>
+            <ul>
+                <li><strong>HTML5:</strong> Understanding the structure of web pages using semantic tags, block
+                    elements, and inline elements. HTML5 is the foundation of any web page, providing the basic
+                    structure that other technologies like CSS and JavaScript build upon. Learning HTML5 has taught me
+                    how to effectively use tags such as header, footer, article, and section , which help define
+                    the different sections of a web page in a way that is meaningful to both users and search engines.
+                    Semantic HTML not only improves the accessibility of web pages but
+                    also makes the code more readable and easier to maintain.</li>
+
+                <li><strong>CSS:</strong> Styling web pages to make them visually appealing and user-friendly. CSS
+                    (Cascading Style Sheets) is the language used to control the presentation of web pages. Through CSS,
+                    I have learned how to apply styles such as colors, fonts, and layouts, transforming plain HTML
+                    documents into aesthetically pleasing web pages. CSS has introduced me to the concept of the box
+                    model, which is crucial for understanding how elements are spaced and aligned on a page.
+                    Additionally, I have explored various layout techniques, including flexbox and grid, which allow for
+                    more complex and responsive designs. Mastering CSS is essential for creating a user-friendly
+                    experience, as it directly impacts how users interact with and perceive a website.</li>
+
+                <li><strong>JavaScript:</strong> Adding interactivity to web pages and enhancing user experience.
+                    JavaScript is a powerful scripting language that allows developers to create dynamic and interactive
+                    web content. By learning JavaScript, I have gained the ability to manipulate the Document Object
+                    Model (DOM), which represents the structure of an HTML document. This has enabled me to create
+                    features such as form validation, interactive menus, and dynamic content updates without the need
+                    for a page reload. JavaScript is also the key to implementing more complex functionality like
+                    animations, event handling, and AJAX, which allows for asynchronous data loading. Through
+                    JavaScript, I have come to appreciate the importance of enhancing user experience by making web
+                    pages more engaging and responsive to user actions.</li>
+
+                <li><strong>Responsive Design:</strong> Ensuring that websites look great on all devices, from desktops
+                    to smartphones. Responsive design is a critical aspect of modern web development, as it ensures that
+                    websites are accessible and functional across a variety of devices and screen sizes. I have learned
+                    how to use CSS media queries to apply different styles based on the size and orientation of the
+                    user's screen. This knowledge has allowed me to create flexible layouts that adapt to different
+                    devices, providing an optimal viewing experience whether the user is on a desktop computer, tablet,
+                    or smartphone. Responsive design also emphasizes the importance of mobile-first design, where
+                    websites are initially designed for smaller screens and then enhanced for larger screens. This
+                    approach ensures that all users, regardless of their device, can easily navigate and interact with
+                    the website.</li>
+            </ul>
+
+            <p> Each of these skills has its own unique challenges and rewards. For example, mastering HTML5 helps
+                create a solid foundation for any web page, while learning CSS allows for creative and attractive
+                designs. JavaScript brings life to web pages by enabling dynamic content and user interactions. Lastly,
+                responsive design ensures that my websites are accessible and functional on any device, providing a
+                seamless experience for all users.</p>
+
+            <p> In addition to these core skills, I have also learned the importance of web accessibility, which
+                involves designing websites that can be used by people with disabilities. This includes implementing
+                features such as alt text for images, keyboard navigation, and ensuring that the website is navigable by
+                screen readers. Accessibility is a crucial consideration in web development, as it ensures that all
+                users, regardless of their abilities, can access and benefit from the content on the web.</p>
+
+            <p> Overall, my web development journey has been incredibly rewarding, and I look forward to continuing to
+                build my skills and create amazing web experiences. The knowledge I have gained so far has provided me
+                with a strong foundation to tackle more advanced topics in the future, such as server-side programming,
+                database integration, and web security. I am excited to continue exploring the vast field of web
+                development and to apply my skills to create websites that are not only functional and beautiful but
+                also accessible and inclusive for all users.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer-container">
+        <div class="footer-column">
+            <a href="https://www.dallascollege.edu">Dallas College</a><br>
+            <a href="https://www.microsoft.com/ai">Microsoft AI</a><br>
+            <a href="https://www.openai.com">ChatGPT</a>
+        </div>
+
+        <div class="footer-column">
+            <p>&copy; 2024 Mianna Parris. All rights reserved.</p>
+            <p><a href="mailto:webmaster@wwmp.com">Email the Webmaster</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Site Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

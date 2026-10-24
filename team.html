@@ -1,0 +1,169 @@
+<!-- Flexbox Assignment 07/28/24 - For this assignment, I created 3 individual team member bios including photos generated via DALL-E and linked the updated layout.css to ensure flex use between desktop and mobile devices. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="layout.css"> <!-- Link to layout.css -->
+
+    <!-- Apple Touch Icons and Favicon links -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+
+        div.box {
+            box-sizing: inherit;
+        }
+        
+        body { 
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header {
+          overflow: hidden;
+          background-color: #f1f1f1;
+          padding: 20px 10px;
+        }
+        
+        .header a {
+          float: center;
+          color: black;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px; 
+          line-height: 25px;
+          border-radius: 4px;
+        }
+        
+        .header a.logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+        
+        .header a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .header a.active {
+          background-color: dodgerblue;
+          color: white;
+        }
+        
+        .header-right {
+          float: right;
+        }
+        
+        @media screen and (max-width: 500px) {
+          .header a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .header-right {
+            float: none;
+          }
+        }
+ 
+        </style>
+</head>
+
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.jpg" alt="Logo" class="logo"> <!-- Logo Image -->
+        <h1>Meet Our Team!</h1>
+    </header>
+
+    <!-- New class for responsive nav menu -->
+    <div class="header"> 
+        <!-- <a href="#default" class="logo">WWMP</a> -->
+           <a href="index.html">Home</a>
+           <a href="about.html">Blog</a>
+           <a href="team.html">Meet the team</a>
+           <a href="contact-us.html">Contact Us</a>
+   </div>
+   
+
+    <!-- Main Content -->
+    <main>
+        <!-- Team Gallery Section -->
+        <section class="team-gallery">
+            <figure class="team-member">
+                <img src="images/team-member1.jpg" alt="Team Member 1">
+                <figcaption>
+                    <h3>Quia Boudreaux</h3>  
+                    <p>Developer</p> 
+                </figcaption>
+            </figure>
+            
+            <figure class="team-member">
+                <img src="images/team-member2.jpg" alt="Team Member 2">
+                <figcaption>
+                    <h3>Janet Jameson</h3> 
+                    <p>Designer</p>
+                </figcaption>
+            </figure>
+
+            <figure class="team-member">
+                <img src="images/team-member3.jpg" alt="Team Member 3">
+                <figcaption>
+                    <h3>Alex Jones</h3>
+                    <p>Project Manager</p>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-container">
+        <div class="footer-column">
+            <ul>
+                <li><a href="https://www.dallascollege.edu">Dallas College</a></li>
+                <li><a href="https://www.microsoft.com/ai">Microsoft AI</a></li>
+                <li><a href="https://chat.openai.com">ChatGPT</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-column">
+            <p>&copy; 2024 Mianna Parris. All rights reserved.</p>
+            <p><a href="mailto:webmaster@wwmp.com">Email the Webmaster</a></p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Site Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li> 
+                <li><a href="about.html">Blog</a></li>
+            </ul>
+        
+        </div>
+    </footer>
+
+</body>
+
+</html>

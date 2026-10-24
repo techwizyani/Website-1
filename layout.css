@@ -1,0 +1,217 @@
+/* layout.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr; /* Define the width ratios */
+    grid-template-rows: auto 1fr auto;  /* Define the height ratios */
+    gap: 10px; /* Space between grid items */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-items: start;
+    background-color: black;
+
+    }
+    h1 {
+        text-align: center;
+    }
+
+ img {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+  }  
+
+header .logo {
+   /* position: absolute; */
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.fixed-nav, .navbar {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+}
+
+.fixed-nav ul, .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-nav li, .navbar li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.fixed-nav a, .navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.sign-in {
+    margin-left: auto;
+}
+
+main {
+    grid-area: main;
+    padding: 10px;
+    background-color: #000000;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+aside.content-list {
+    grid-area: aside;
+    float: right;
+    width: 20vw;
+    position: sticky;
+    top: 0;
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    clear: none;
+} 
+
+figure {
+    margin: auto;
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 100%);
+    max-width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer div {
+    padding: 10px;
+}
+
+/* Flexbox for Team Gallery */
+.team-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, and flex-basis */
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-gallery img {
+    width: 100%; 
+    height: auto;
+}
+
+/* Flexbox for Footer */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Floating elements adjustment */
+.float-left {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 10px; /* Added margin-bottom for spacing with text */
+}
+
+.float-right {
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+    margin-bottom: 10px; /* Added margin-bottom for spacing with text */
+}
+
+@media screen and (max-width: 768px) {
+    .fixed-nav ul, .navbar ul {
+        display: block;
+    }
+
+    .fixed-nav li, .navbar li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .float-left,
+    .float-right {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    
+
+}
+
+
